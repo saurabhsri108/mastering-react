@@ -5,7 +5,7 @@ import {
   useLogin,
   useLogout,
   useUser,
-} from "./store-zustand";
+} from "../../stores/store-zustand";
 import Links from "@/components/links";
 
 const inter = Inter({ subsets: ["latin"] });

@@ -6,7 +6,7 @@ import {
   useLogout,
   useUser,
   StoreContextProvider,
-} from "./store-context-selector";
+} from "../../stores/store-context-selector";
 import Links from "@/components/links";
 
 const inter = Inter({ subsets: ["latin"] });
