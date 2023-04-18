@@ -1,3 +1,4 @@
+import Links from "@/components/links";
 import { Inter } from "next/font/google";
 import { ReactNode, createContext, useContext, useReducer } from "react";
 
@@ -104,6 +105,7 @@ export default function CounterUseState() {
           <Counter />
         </div>
       </CounterContextProvider>
+      <Links />
     </main>
   );
 }

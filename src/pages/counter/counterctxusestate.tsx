@@ -1,3 +1,4 @@
+import Links from "@/components/links";
 import { Inter } from "next/font/google";
 import {
   ReactNode,
@@ -77,6 +78,7 @@ export default function CounterUseState() {
           <Counter />
         </div>
       </CounterContextProvider>
+      <Links />
     </main>
   );
 }

@@ -6,6 +6,7 @@ import {
   useLogout,
   useUser,
 } from "./store-zustand";
+import Links from "@/components/links";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -68,6 +69,7 @@ export default function ZustandCommerce() {
         <AddToCartSection />
         <CartCountSection />
       </div>
+      <Links />
     </main>
   );
 }

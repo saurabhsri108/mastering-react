@@ -7,6 +7,7 @@ import {
   useUser,
   StoreContextProvider,
 } from "./store-context";
+import Links from "@/components/links";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -59,7 +60,7 @@ const CartCountSection = () => {
   );
 };
 
-const ZustandCommerce = () => {
+const ContextCommerce = () => {
   return (
     <main className={`${inter.className} w-full`}>
       <h1 className="m-4 text-xl font-bold">Zustand Commerce</h1>
@@ -69,6 +70,7 @@ const ZustandCommerce = () => {
         <AddToCartSection />
         <CartCountSection />
       </div>
+      <Links />
     </main>
   );
 };
@@ -76,7 +78,7 @@ const ZustandCommerce = () => {
 export default function ZustandContextWrapper() {
   return (
     <StoreContextProvider>
-      <ZustandCommerce />
+      <ContextCommerce />
     </StoreContextProvider>
   );
 }

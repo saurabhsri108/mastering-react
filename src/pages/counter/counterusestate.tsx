@@ -1,3 +1,4 @@
+import Links from "@/components/links";
 import { Inter } from "next/font/google";
 import { Dispatch, SetStateAction, memo, useState } from "react";
 
@@ -52,6 +53,7 @@ export default function CounterUseState() {
         <Container setCounter={setCounter} />
         <Counter counter={counter} />
       </div>
+      <Links />
     </main>
   );
 }
